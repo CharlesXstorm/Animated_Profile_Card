@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CharlesXstorm</title>
+        <meta name="view-port" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    
+        <div class="cont" id="home"><!--Home start-->
+            <div class="nv"><!--nav start-->
+            <nav>
+                <span onclick="hide()" class="material-icons arw" id="spn" style="background-image:linear-gradient(180deg, dodgerblue,slateblue);">
+arrow_drop_down_circle
+</span>
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+            </nav>
+            </div><!--nav end-->
+            
+            <div class="side" id="sid" style="animation-name:non;"><!--dropdown start-->
+                <ul>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">3D Modeling</a></li>
+                <li><a href="#">Illustration</a></li>
+                <li><a href="#">Painting</a></li>
+                </ul>
+            </div><!--dropdown end-->
+            
+            
+            <div class="avt"><!--Avatar start-->
+                <svg height="600px" width="400px">
+            <circle cx="200px" cy="300px" r="100" style="fill:slateblue"></circle>
+            <circle class="reye" cx="160px" cy="280px" r="20" style="fill:#fff"></circle>
+            <circle class="leye" cx="240px" cy="280px" r="20" style="fill:#fff"></circle>
+            <polygon class="mouth" style="stroke:#fff; stroke-width:2px;fill:#fff" points="120,310 155,340 160,330 170,350 180,340 190,340 200,360 210,340 220,340 230,350 240,330 245,340 280,310 250,360 230,370 200,380 170,370 150,360"></polygon>
+          <!--Hair 01-->  
+         <polygon class="h01" style="fill:#000" points="160,165 180,160 190,180 185,210 200,210 195,175 180,152"></polygon>
+         
+         <!--Hair 02-->
+         <polygon class="h02" style="fill:#000;" points="220,190 210,210 220,210 228,190 240,200 230,180"></polygon>
+        </svg>
+            </div><!--Avatar ends-->
+            
+            <div class="bio"><!--bio start-->
+                <h1 style="margin-bottom:0px;font-family:festive,sans-serif;letter-spacing:2px">Xstorm</h1>
+                <p style="margin-top:0px;font-size:12px;">Developer | 3D Artist | 2D Artist | Animator | Chinese Translator<br/>
+                    <span class="material-icons arw" style="background-image:linear-gradient(180deg, dodgerblue,slateblue);font-size:15px">
+location_on
+</span> Lagos, Nigeria.
+                </p>
+            </div><!--bio ends-->
+            
+            <div id="imglgdiv" class="imglg" style="display:none;animation-name:non;"><!--Img enlarge start-->
+            <div style="width:280px;height:40px;padding:10px;background-color:#fff;margin:auto"><span onclick="cls()" class="material-icons arw" style="float:right;background-image:linear-gradient(180deg, dodgerblue,slateblue);font-size:20px">
+close
+</span></div>
+            <div style="width:280px;clear:right;margin:auto">
+                <img id="imglg" src="https://www.dropbox.com/s/mellnvz8yt2jx3e/psx_20181108_111906.jpg?dl=0&raw=1" alt="art" style="width:280px" >
+            </div>
+                
+            </div><!--img enlarge end-->
+            
+            
+            <div class="img"><!--Img container start-->
+                <img id="img1" onclick="enlg('img1')" style="animation-name:non" src="https://www.dropbox.com/s/ey80xqoznne5oj2/beautyres.jpg?dl=0&raw=1" alt="art">
+                <img id="img2" onclick="enlg('img2')" style="animation-name:non" src="https://www.dropbox.com/s/mellnvz8yt2jx3e/psx_20181108_111906.jpg?dl=0&raw=1" alt="art">
+                <img id="img3" onclick="enlg('img3')" style="animation-name:non" src="https://www.dropbox.com/s/5k5zub75vdhhjdg/girly.jpg?dl=0&raw=1" alt="art">
+                <img id="img4" onclick="enlg('img4')" style="animation-name:non" src="https://www.dropbox.com/s/9178ra3aumj7dd3/flowergirl_crop.jpg?dl=0&raw=1" alt="art">
+                <img id="img5" onclick="enlg('img5')" style="animation-name:non" src="https://www.dropbox.com/s/v6e2fa5jwtmqj5n/thiefres.jpg?dl=0&raw=1" alt="art">
+                <img id="img6" onclick="enlg('img6')" style="animation-name:non" src="https://www.dropbox.com/s/9fwj4h0tx42nq07/SI_20211111_071614.jpg?dl=0&raw=1" alt="art">
+            </div><!--Img container ends-->
+            
+            <div class="round1"></div>
+            <div class="round2"></div>
+            <div class="round3"></div>
+            <div class="round4"></div>
+            <div class="round41"></div>
+            <div class="round5"></div>
+            
+            <div class="round6"></div>
+            <div class="round7"></div>
+            <div class="round8"></div>
+            <div class="round9"></div>
+            <div class="round10"></div>
+            
+
+        </div><!--Home End-->
+        
+        <!--social links-->
+        <div style ="background-color:aliceblue; position:sticky;bottom:160px;height:100px;z-index:1;max-width:auto;margin:0 20px;padding-top:20px;">
+            <span class="material-icons flw">
+keyboard_double_arrow_up
+</span>
+            <span class="material-icons flw" style="float:right;">
+keyboard_double_arrow_up
+</span>
+        </div>
+        
+        <div class="foot" style ="background-color:aliceblue; position:sticky;bottom:0px;height:300px;z-index:0;max-width:auto;margin:0 20px; ">
+        <div style="margin:auto;max-width:auto;font-family:amatic SC, sans-serif;padding:20px;text-align:center;" class="flw">
+            <h2>If you're curoius about my works, you can follow me on instagram or twitter</h2>
+        </div>
+        
+        <div style="padding:0px 20px;text-align:center;font-weight:500;font-size:30px;">
+            <a href="https://www.instagram.com/charlesxstorm" target="_blank" style="border:none;"><i class="fa fa-instagram flw" aria-hidden="true"></i></a>
+            <a href="https://www.twitter.com/charlesxstorm" target="_blank" style="border:none;"><i class="fa fa-twitter flw" aria-hidden="true" ></i></a>
+        </div>
+            
+        </div><!--social links end-->
+
+        
+        
+        
+        <script>
+            
+            function hide(){
+                var side = document.getElementById("sid");
+                var span = document.getElementById("spn")
+                if (side.style.animationName=="non"){
+                span.style.backgroundImage="linear-gradient(180deg, dodgerblue,yellow)";
+                    side.style.animationName="down";
+                    side.style.transform="translateY(-10px)";
+                    side.style.position="fixed";
+                    
+                }
+                
+                else if (side.style.animationName=="down"){
+                
+                   span.style.backgroundImage="linear-gradient(180deg, dodgerblue,slateblue)";
+                    side.style.animationName="up";
+                    side.style.transform="translateY(-250px)";
+                    side.style.position="relative";
+                }
+                else{
+                   span.style.backgroundImage="linear-gradient(180deg, dodgerblue,yellow)";
+                    side.style.animationName="down";
+                    side.style.transform="translateY(-10px)";
+                    side.style.position="fixed"
+                }
+                
+            }
+            
+            function enlg(x){
+                var img = document.getElementById(x);
+                var imglgdiv = document.getElementById("imglgdiv");
+                var imglg = document.getElementById("imglg")
+                img.style.animationName="enlganim";
+                setTimeout(function fun(){
+                img.style.animationName="non";
+                imglg.src=img.getAttribute("src");
+                imglgdiv.style.display="block"},200);
+            }
+            function cls(){
+                var imglgdiv = document.getElementById("imglgdiv");
+                imglgdiv.style.animationName = "lftanim";
+                setTimeout(function fun(){
+                imglgdiv.style.animationName="non";
+                imglgdiv.style.display="none";},500);
+            }
+        </script>
+    </body>
+</html>
